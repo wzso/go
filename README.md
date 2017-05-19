@@ -4,7 +4,9 @@
 
 文档： [英语](https://golang.org/doc/)、[中文](http://zh-golang.appspot.com/doc/)
 
-### [Go 指南](https://tour.go-zh.org/welcome/1)
+### Go 指南 
+
+（[链接](https://tour.go-zh.org/welcome/1)）
 
  * [基础](https://github.com/zssr/go/tree/master/tour/Basics)
 
