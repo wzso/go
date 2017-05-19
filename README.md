@@ -4,7 +4,7 @@
 
 文档： [英语](https://golang.org/doc/)、[中文](http://zh-golang.appspot.com/doc/)
 
-### Go 指南 
+### 1. Go 指南
 
 （[链接](https://tour.go-zh.org/welcome/1)）
 
@@ -19,4 +19,4 @@
  * [并发](https://github.com/zssr/go/tree/master/tour/Concurrency)
 
 
-### To continue...
+### 2. To continue...
