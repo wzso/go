@@ -10,6 +10,7 @@ var (
 	b string     = "b"
 	c complex128 = cmplx.Sqrt(-5 + 12i) // complex number 复数，完全忘记这个概念了 😶
 	d complex64  = -5 + 82i
+	e byte       = 'a' // char maybe
 )
 
 func main() {
@@ -17,6 +18,7 @@ func main() {
 	fmt.Printf(f, a, a)
 	fmt.Printf(f, c, c)
 	fmt.Printf(f, d, d)
+	fmt.Printf(f, e, e)
 }
 
 /*
