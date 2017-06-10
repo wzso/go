@@ -24,4 +24,5 @@ func main() {
 	p := &n
 	p.firstName = "Bob"
 	fmt.Println(n)
+	fmt.Printf("%T\n", p) // *main.name
 }
