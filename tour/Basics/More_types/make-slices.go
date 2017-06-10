@@ -3,6 +3,9 @@ package main
 import "fmt"
 
 func printSlice(name string, slice []int) {
+	if len(slice) > 0 {
+		fmt.Printf("%v[0]=%p, %v[%d]=%p\n", name, &slice[0], name, len(slice)-1, &slice[len(slice)-1])
+	}
 	fmt.Printf("%s (%p): len == %d, cap == %d. %v.\n", name, &slice, len(slice), cap(slice), slice)
 }
 
@@ -30,4 +33,15 @@ func main() {
 	fmt.Printf("%p, %p", &arr, &as)
 	as[0] = 9
 	fmt.Println(arr, as)
+
+	// nil slice
+	var nilSlice []int
+	printSlice("nilSlice", nilSlice) // its address is not nil
+
+	// append
+	for i := 0; i < 10; i++ {
+		s4 = append(s4, 999)
+		// 观察当切片扩容之后，第一个元素的地址变化
+		printSlice("s4", s4)
+	}
 }
